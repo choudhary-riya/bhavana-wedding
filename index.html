@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bhavana weds Mahender | 1st July 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Pinyon+Script&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Floating petals -->
+  <div class="petals-container" id="petals"></div>
+
+  <!-- HERO / COVER PAGE -->
+  <section class="cover" id="cover">
+    <div class="cover-border"></div>
+    <div class="cover-inner">
+      <div class="ganesha-icon">🕉</div>
+      <p class="blessing">॥ Shree Ganeshaya Namah ॥</p>
+      <div class="divider-ornament">❧</div>
+      <p class="from-family">Soyal Family</p>
+      <p class="joyfully">joyfully announces the wedding of</p>
+      <h1 class="bride-name">Bhavana</h1>
+      <div class="weds-wrap">
+        <span class="weds-line"></span>
+        <span class="weds-text">weds</span>
+        <span class="weds-line"></span>
+      </div>
+      <h1 class="groom-name">Mahender</h1>
+      <div class="date-badge">
+        <span class="day">Wednesday</span>
+        <span class="date-num">01</span>
+        <span class="month-year">July · 2026</span>
+      </div>
+      <button class="scroll-btn" onclick="document.getElementById('events').scrollIntoView({behavior:'smooth'})">
+        View Celebrations ↓
+      </button>
+    </div>
+  </section>
+
+  <!-- COUPLE SECTION -->
+  <section class="couple-section">
+    <div class="couple-bg-pattern"></div>
+    <div class="section-content">
+      <div class="section-tag">The Couple</div>
+      <div class="couple-grid">
+        <div class="person-card bride-card">
+          <div class="person-icon">🌸</div>
+          <h2 class="person-title">Chi. Sow. Bhavana</h2>
+          <p class="person-lineage">Grand D/o. Smt. Chagni Bai<br/>&amp; Late Sri Jasaramji Soyal</p>
+          <p class="person-parents">D/o. Smt. Narangi<br/>&amp; Sri J. Prem Choudhary</p>
+        </div>
+        <div class="ampersand-col">
+          <span class="amp">&amp;</span>
+        </div>
+        <div class="person-card groom-card">
+          <div class="person-icon">🌿</div>
+          <h2 class="person-title">Chi. Mahender</h2>
+          <p class="person-lineage">Grand S/o. Late Smt. Kesi Bai<br/>&amp; Late Sri Acharamji Gehlot</p>
+          <p class="person-parents">S/o. Smt. Rekha Devi<br/>&amp; Sri Bhikaramji Gehlot</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENTS TIMELINE -->
+  <section class="events-section" id="events">
+    <div class="section-content">
+      <div class="section-tag">Celebrations</div>
+      <h2 class="section-heading">Join Us For</h2>
+
+      <!-- Haldi -->
+      <div class="event-card haldi-card">
+        <div class="event-icon">🌼</div>
+        <div class="event-details">
+          <h3 class="event-name">Haldi Ceremony</h3>
+          <p class="event-date">Sunday, 28th June 2026</p>
+          <p class="event-time">from 4:15 p.m. onwards</p>
+          <div class="event-venue">
+            <span class="venue-label">Venue</span>
+            <span class="venue-name">Fiesta Convention</span>
+            <span class="venue-addr">Shankarpally Road, Hyderabad</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sangeet -->
+      <div class="event-card sangeet-card">
+        <div class="event-icon">🎶</div>
+        <div class="event-details">
+          <h3 class="event-name">Sangeet & Music &amp; Dance</h3>
+          <p class="event-date">Monday, 29th June 2026</p>
+          <p class="event-time">from 7:15 p.m. onwards</p>
+          <div class="event-venue">
+            <span class="venue-label">Venue</span>
+            <span class="venue-name">Om Convention Hall</span>
+            <span class="venue-addr">Narsingi, Hyderabad</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Wedding -->
+      <div class="event-card wedding-card featured-event">
+        <div class="featured-label">Main Event</div>
+        <div class="event-icon">💍</div>
+        <div class="event-details">
+          <h3 class="event-name">Wedding</h3>
+          <p class="event-date">Wednesday, 1st July 2026</p>
+          <div class="timings-row">
+            <div class="timing-item">
+              <span class="timing-label">Lunch</span>
+              <span class="timing-val">11:30 a.m. onwards</span>
+            </div>
+            <div class="timing-divider">·</div>
+            <div class="timing-item">
+              <span class="timing-label">Muhurath</span>
+              <span class="timing-val">01:51 p.m.</span>
+            </div>
+          </div>
+          <div class="event-venue">
+            <span class="venue-label">Venue</span>
+            <span class="venue-name">Om Convention Hall</span>
+            <span class="venue-addr">Narsingi, Hyderabad</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COUNTDOWN -->
+  <section class="countdown-section">
+    <div class="section-content">
+      <p class="countdown-label">Counting down to the big day</p>
+      <div class="countdown-grid" id="countdown">
+        <div class="count-box"><span id="cd-days">--</span><span class="count-unit">Days</span></div>
+        <div class="count-box"><span id="cd-hours">--</span><span class="count-unit">Hours</span></div>
+        <div class="count-box"><span id="cd-mins">--</span><span class="count-unit">Minutes</span></div>
+        <div class="count-box"><span id="cd-secs">--</span><span class="count-unit">Seconds</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="ganesha-icon small">🕉</div>
+    <p class="footer-blessing">With love &amp; blessings</p>
+    <h3 class="footer-family">Soyal Family, Near &amp; Dear</h3>
+    <p class="footer-contact">Sri Prakash Prem Soyal · 9949412200 · 9849512424</p>
+    <p class="footer-address">Flat No. 1403, Tranquil Towers, White Fields, Hyderabad</p>
+    <div class="footer-divider">— ·🌸· —</div>
+    <p class="footer-note">॥ Shree Ganeshaya Namah ॥</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
