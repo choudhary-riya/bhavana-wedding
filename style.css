@@ -29,12 +29,13 @@ body {
 /* ========== HERO (uses 1.png full frame) ========== */
 .cover {
   position: relative;
-  min-height: 100svh;
+  width: 100%;
   background: url('1.png') top center no-repeat;
-  background-size: contain;
+  background-size: 100% auto;
+  aspect-ratio: 1245 / 1748;
   padding: 1rem;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   z-index: 1;
 }
@@ -42,11 +43,11 @@ body {
 .hero-content {
   position: relative;
   z-index: 5;
-  width: 100%;
+  width: 60%;
   max-width: 440px;
-  padding: 2.5rem 1.4rem 2rem;
+  padding: 1.5rem 1rem 1.5rem;
   text-align: center;
-  margin: 15% auto 8%;
+  margin: 18% auto 8%;
   animation: fadeUp 1.2s ease both;
 }
 
@@ -56,120 +57,113 @@ body {
 }
 
 .ganesha-icon {
-  width: 45px; 
-  height: 45px; 
-  margin: 0 auto 0.6rem; 
+  width: 60px; 
+  height: auto; 
+  margin: 0 auto 0.7rem; 
   display: block;
-  filter: drop-shadow(0 1px 2px rgba(161, 126, 26, 0.3));
-}
-
-.kolam { 
-  width: 55px; 
-  height: 55px; 
-  margin: 0 auto 0.6rem; 
-  display: block; 
+  object-fit: contain;
 }
 
 .om-blessing {
   font-family: 'Noto Serif Devanagari', serif;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   color: var(--olive);
   font-weight: 600;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .together {
   font-style: italic;
-  font-size: 0.9rem;
+  font-size: 0.78rem;
   color: var(--olive);
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
   letter-spacing: 0.03em;
 }
 
 .bride-name, .groom-name {
   font-weight: 400;
-  font-size: clamp(1.4rem, 7vw, 2.8rem);
+  font-size: clamp(1.1rem, 4.5vw, 2.8rem);
   color: var(--olive);
-  letter-spacing: 0.18em;
+  letter-spacing: 0.15em;
   line-height: 1.2;
-  margin: 0.3rem 0;
+  margin: 0.25rem 0;
   text-transform: uppercase;
 }
 
 .amp {
   font-family: 'Pinyon Script', cursive;
-  font-size: clamp(1.8rem, 8vw, 2.6rem);
+  font-size: clamp(1.4rem, 5.5vw, 2.6rem);
   color: var(--olive);
   display: block;
   line-height: 1;
-  margin: 0.15rem 0;
+  margin: 0.1rem 0;
 }
 
 .name-ornament {
-  width: 70px;
-  height: 18px;
-  margin: 1rem auto 1.2rem;
+  width: 60px;
+  height: 16px;
+  margin: 0.7rem auto 0.8rem;
   display: block;
 }
 
 .invite-text {
   font-style: italic;
-  font-size: 0.88rem;
+  font-size: 0.75rem;
   color: var(--olive);
-  margin: 1.4rem 0 1rem;
-  line-height: 1.6;
+  margin: 0.8rem 0 0.7rem;
+  line-height: 1.5;
 }
 
 .event-date {
-  font-size: 1rem;
+  font-size: 0.85rem;
   color: var(--olive);
   font-weight: 600;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.2rem;
 }
 .event-date sup { font-size: 0.7em; color: var(--gold); }
 
 .event-time, .muhurath-line {
-  font-size: 0.88rem;
+  font-size: 0.72rem;
   color: var(--olive);
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.2rem;
 }
 .event-time { font-style: italic; }
-.muhurath-line { font-weight: 600; margin-bottom: 1.2rem; }
+.muhurath-line { font-weight: 600; margin-bottom: 0.8rem; }
 .muhurath-line span { font-style: italic; color: var(--gold); font-weight: 500; }
 
 .venue-divider {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.6rem;
-  margin: 0.8rem auto;
-  max-width: 200px;
+  gap: 0.5rem;
+  margin: 0.7rem auto;
+  max-width: 160px;
 }
 .venue-divider .line {
   flex: 1; height: 1px;
   background: linear-gradient(to right, transparent, var(--olive-mid), transparent);
 }
-.venue-divider .diamond { color: var(--gold); font-size: 0.5rem; }
+.venue-divider .diamond { color: var(--gold); font-size: 0.45rem; }
 
 .venue-at {
   font-style: italic;
-  font-size: 0.85rem;
+  font-size: 0.72rem;
   color: var(--olive);
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.2rem;
 }
 
 .venue-name {
-  font-size: 1rem;
+  font-size: 0.85rem;
   color: var(--olive);
   font-weight: 600;
-  margin-bottom: 0.15rem;
+  margin-bottom: 0.1rem;
 }
 
 .venue-loc {
-  font-size: 0.85rem;
+  font-size: 0.72rem;
   color: var(--olive);
   font-style: italic;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .scroll-btn {
@@ -177,10 +171,10 @@ body {
   border: 1px solid var(--gold);
   color: var(--cream-warm);
   font-family: 'Cormorant Garamond', serif;
-  font-size: 0.7rem;
-  letter-spacing: 0.22em;
+  font-size: 0.6rem;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  padding: 0.75rem 1.4rem;
+  padding: 0.55rem 1rem;
   cursor: pointer;
   transition: all 0.4s ease;
   margin-top: 0.4rem;
@@ -494,20 +488,28 @@ body {
 
 /* ========== FOOTER ========== */
 .footer {
-  background: rgba(245, 233, 211, 0.85);
-  padding: 3rem 1.2rem 2.5rem;
+  background: transparent;
+  padding: 2.5rem 1.2rem 3rem;
   text-align: center;
-  border-top: 2px solid var(--olive-mid);
   z-index: 1;
   position: relative;
 }
-.footer::before {
+.footer-card {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid var(--olive-mid);
+  padding: 2rem 1.5rem;
+  max-width: 380px;
+  margin: 0 auto;
+  position: relative;
+}
+.footer-card::before, .footer-card::after {
   content: '';
   position: absolute;
-  top: 4px; left: 1.2rem; right: 1.2rem;
-  height: 1px;
-  background: linear-gradient(to right, transparent, var(--olive-mid), transparent);
+  width: 14px; height: 14px;
+  border: 1px solid var(--olive);
 }
+.footer-card::before { top: 6px; left: 6px; border-right: none; border-bottom: none; }
+.footer-card::after { bottom: 6px; right: 6px; border-left: none; border-top: none; }
 
 .footer-blessing {
   font-style: italic;
@@ -541,27 +543,30 @@ body {
 
 /* ========== DESKTOP ========== */
 @media (min-width: 640px) {
-  .cover { padding: 3rem 2rem; }
+  .cover { padding: 2rem; }
   .hero-content { 
+    width: 55%;
     max-width: 480px; 
-    padding: 4rem 2.5rem 3rem; 
-    margin: 18% auto 10%; 
+    padding: 2rem 1.5rem 2rem; 
+    margin: 16% auto 8%; 
   }
   
-  .ganesha-icon { width: 50px; height: 50px; margin-bottom: 0.8rem; }
-  .kolam { width: 65px; height: 65px; margin-bottom: 0.8rem; }
-  .om-blessing { font-size: 1.05rem; margin-bottom: 1.5rem; }
-  .together { font-size: 1rem; margin-bottom: 1.5rem; }
-  .bride-name, .groom-name { font-size: clamp(2rem, 8vw, 2.8rem); margin: 0.4rem 0; }
-  .amp { font-size: 2.6rem; margin: 0.2rem 0; }
-  .name-ornament { width: 80px; height: 20px; margin: 1.2rem auto 1.5rem; }
-  .invite-text { font-size: 0.98rem; margin: 1.8rem 0 1.4rem; }
-  .event-date { font-size: 1.15rem; }
-  .event-time, .muhurath-line { font-size: 1rem; }
-  .venue-at { font-size: 0.95rem; }
-  .venue-name { font-size: 1.15rem; }
+  .ganesha-icon { width: 75px; margin-bottom: 0.9rem; }
+  .om-blessing { font-size: 1.05rem; margin-bottom: 1.4rem; }
+  .together { font-size: 1rem; margin-bottom: 1.3rem; }
+  .bride-name, .groom-name { font-size: clamp(1.6rem, 3.5vw, 2.4rem); margin: 0.3rem 0; letter-spacing: 0.18em; }
+  .amp { font-size: clamp(2rem, 4vw, 2.6rem); margin: 0.15rem 0; }
+  .name-ornament { width: 80px; height: 20px; margin: 1rem auto 1.2rem; }
+  .invite-text { font-size: 0.95rem; margin: 1.4rem 0 1.2rem; line-height: 1.6; }
+  .event-date { font-size: 1.1rem; margin-bottom: 0.3rem; }
+  .event-time, .muhurath-line { font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .muhurath-line { margin-bottom: 1.2rem; }
+  .venue-divider { gap: 0.7rem; margin: 1rem auto; max-width: 220px; }
+  .venue-divider .diamond { font-size: 0.55rem; }
+  .venue-at { font-size: 0.95rem; margin-bottom: 0.3rem; }
+  .venue-name { font-size: 1.1rem; margin-bottom: 0.2rem; }
   .venue-loc { font-size: 0.95rem; margin-bottom: 1.5rem; }
-  .scroll-btn { font-size: 0.78rem; padding: 0.85rem 1.6rem; }
+  .scroll-btn { font-size: 0.78rem; padding: 0.85rem 1.6rem; letter-spacing: 0.25em; }
 
   .couple-grid {
     display: grid;
